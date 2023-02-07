@@ -355,6 +355,10 @@ margin-bottom: 16px;
   border-color: var(--link-color);
 }
 
+.customer-logo-icon {
+    fill: var(--client-logo-color);
+}
+
 .customer-logo:hover .customer-logo-icon,
 .customer-logo:focus .customer-logo-icon {
   fill: var(--link-color);
@@ -367,16 +371,6 @@ margin-bottom: 16px;
   width: 100%;
   height: 100%;
   fill: var(--client-logo-color);
-}
-
-.customer-logo-icon:hover,
-.customer-logo-icon:focus {
-  border-color: var(--link-color);
-}
-
-.customer-logo-icon:hover .customer-logo-icon,
-.customer-logo-icon:focus .customer-logo-icon {
-  fill: var(--link-color);
 }
 
 /* ========== PORTFOLIO ================= */
