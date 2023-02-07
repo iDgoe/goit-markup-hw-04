@@ -323,6 +323,7 @@ margin-bottom: 16px;
 
 .customers-section {
   padding-top: 130px;
+  padding-bottom: 120px;
 }
 
 .customers-list {
@@ -343,8 +344,6 @@ margin-bottom: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
   border: 1px solid var(--client-logo-color);
   border-radius: 4px;
   fill: var(--client-logo-color);
@@ -368,8 +367,6 @@ margin-bottom: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
   fill: var(--client-logo-color);
 }
 
