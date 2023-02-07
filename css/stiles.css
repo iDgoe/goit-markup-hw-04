@@ -359,8 +359,8 @@ margin-bottom: 16px;
     fill: var(--client-logo-color);
 }
 
-.customer-logo:hover, .customer-logo-icon:hover,
-.customer-logo:focus, .customer-logo-icon:focus {
+.customer-logo-icon:hover,
+.customer-logo-icon:focus {
   fill: var(--link-color);
 }
 
