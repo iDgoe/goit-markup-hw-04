@@ -220,6 +220,17 @@ button {
     background-color: var(--link-color);
 }
 
+.strategy-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  background-color: var(--btn-white-color);
+  margin-bottom: 8px;
+
+}
+
 .our-team {
     background-color: var(--btn-white-color);
     padding-top: 120px;
@@ -344,6 +355,8 @@ margin-bottom: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--client-logo-color);
   border-radius: 4px;
   fill: var(--client-logo-color);
@@ -356,6 +369,8 @@ margin-bottom: 16px;
 
 .customer-logo-icon {
     fill: var(--client-logo-color);
+    width: 100%;
+  height: 100%;
 }
 
 .customer-logo-icon:hover,
