@@ -174,7 +174,6 @@ button {
 .our-team-item:not(:last-child) {
   margin-right: 24px;
 }
-
 .contact-mail {
   margin-right: 40px;
 }
@@ -277,6 +276,10 @@ button {
 .our-team-list {
   display: flex;
 }
+
+/* .our-team-cards:not(:last-child) {
+  margin-right: 24px;
+} */
 
 .our-team-cards {
   padding-top: 32px;
