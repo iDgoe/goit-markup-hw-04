@@ -422,8 +422,6 @@ button {
 
 .customer-logo-icon {
   fill: var(--client-logo-color);
-  width: 104;
-  height: 56;
 }
 
 .customer-logo-icon:hover,
