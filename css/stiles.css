@@ -8,6 +8,8 @@
   --btn-color: #4d5ae5;
   --btn-white-color: #f4f4fd;
   --client-logo-color: #8e8f99;
+  --footer-link-color: #31d0aa;
+  --social-link-color: #ffffff1a;
 }
 
 .list {
@@ -24,7 +26,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #2e2f42;
+  color: var(--body-color);
 }
 
 h1,
@@ -62,27 +64,41 @@ button {
   cursor: pointer;
 }
 
-.display-flex {
+/* .display-flex {
   display: flex;
   justify-content: center;
-}
+} */
 
-.section {
+/* .section {
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 /* =========HEADER============ */
 
-.head-flex {
+.header-container {
+  display: flex;
   align-items: center;
+  justify-content: center;
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
-.strategy-flex {
+.page-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.strategy-list {
   display: flex;
   align-items: flex-start;
+}
+.adress-list {
+  display: flex;
 }
 
 .menu-link {
@@ -136,7 +152,7 @@ button {
   padding-top: 120px;
 }
 
-.strategy-list:not(:last-child) {
+.strategy-item:not(:last-child) {
   margin-right: 24px;
 }
 
@@ -148,14 +164,14 @@ button {
   margin-right: 24px;
 }
 
-.block-our-team {
+.our-team-item {
   padding-top: 0px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.block-our-team:not(:last-child) {
+.our-team-item:not(:last-child) {
   margin-right: 24px;
 }
 
@@ -163,7 +179,7 @@ button {
   margin-right: 40px;
 }
 
-.adress-ul {
+.adress {
   display: flex;
   margin-left: auto;
 }
@@ -178,6 +194,8 @@ button {
 /* ========== MAIN ================= */
 
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--body-color);
   padding-top: 188px;
   padding-bottom: 188px;
@@ -186,11 +204,16 @@ button {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero/people-office.jpg);
-  width: 1440px;
+  max-width: 1440px;
   background-size: cover;
 }
 
-.section-padding {
+/* .section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+} */
+
+.section-work {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -199,17 +222,21 @@ button {
   padding-bottom: 120px;
 }
 
-.main-title {
+.hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-text-btn-color);
   margin-bottom: 48px;
+  width: 495px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 
-.modal-btn {
+.hero-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -225,8 +252,8 @@ button {
   border: none;
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   line-height: 1.5;
   background-color: var(--link-color);
 }
@@ -245,6 +272,10 @@ button {
   background-color: var(--btn-white-color);
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.our-team-list {
+  display: flex;
 }
 
 .our-team-cards {
@@ -267,8 +298,8 @@ button {
   border-top-color: var(--white-text-btn-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .shadow-link {
@@ -280,7 +311,11 @@ button {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.title-big {
+.work-lisl {
+  display: flex;
+}
+
+.title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -338,7 +373,7 @@ button {
   margin-bottom: 16px;
 }
 
-.div-footer {
+.footer-wrap {
   display: flex;
 }
 
@@ -387,8 +422,8 @@ button {
 
 .customer-logo-icon {
   fill: var(--client-logo-color);
-  width: 100%;
-  height: 100%;
+  width: 104;
+  height: 56;
 }
 
 .customer-logo-icon:hover,
@@ -405,21 +440,25 @@ button {
 
 /* ========== PORTFOLIO ================= */
 
-.portfolio-btn-section {
+.portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
-  justify-content: space-between;
 }
 
 .margin-portfolio {
   margin-bottom: 72px;
+}
+.portfolio-list-btn {
+  display: flex;
+  margin-bottom: 72px;
+  justify-content: center;
 }
 
 /* .section-cards {
             padding-bottom: 120px;
         }*/
 
-.modal-btn-portfolio {
+.portfolio-btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -431,8 +470,6 @@ button {
   color: var(--btn-color);
   background: var(--btn-white-color);
   padding: 12px 24px;
-
-  background: var(--btn-white-color);
   border: 1px solid var(--text-footer-color);
   border-radius: 4px;
   flex: none;
@@ -441,16 +478,16 @@ button {
   display: block;
 }
 
-.portfolio-btn-flex {
+.portfolio-item {
   justify-content: center;
 }
 
-.portfolio-btn-flex:not(:last-child) {
+.portfolio-item:not(:last-child) {
   margin-right: 24px;
 }
 
-.modal-btn-portfolio:hover,
-.modal-btn-portfolio:focus {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
   color: var(--white-text-btn-color);
   background: var(--link-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -472,28 +509,6 @@ button {
 
 /* ========= PORTFOLIO ================= */
 
-/* .social-list-item {
-display: flex;
-justify-content: center; 
-    align-items: center; 
-    background-color: var(--logo-color);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-   
-}
-
-.social-list-link {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    background-color: var(--logo-color);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-   
-}  */
-
 .social-list-link {
   display: flex;
   justify-content: center;
@@ -504,15 +519,14 @@ justify-content: center;
   background-color: var(--logo-color);
 }
 
-.social-list-link-footer {
+.footer-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #ffffff1a;
-  fill: var(--btn-white-color);
+  background-color: var(--social-link-color);
 }
 
 .social-list {
@@ -522,9 +536,9 @@ justify-content: center;
   gap: 24px;
 }
 
-/* .social-list-icon {
+.social-list-icon {
   fill: var(--btn-white-color);
-} */
+}
 
 .social-list-link:hover,
 .social-list-link:focus {
@@ -532,11 +546,17 @@ justify-content: center;
   background-color: var(--link-color);
 }
 
-.social-list-link-footer:hover,
-.social-list-link-footer:focus {
+.footer-link:hover,
+.footer-link:focus {
   line-height: 1.5;
-  background-color: #31d0aa;
+  background-color: var(--footer-link-color);
 }
 
 /* .social-list-item:not(:last-child) {
     margin-right: 24px;} */
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
