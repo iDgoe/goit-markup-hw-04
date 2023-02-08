@@ -512,6 +512,7 @@ justify-content: center;
   height: 40px;
   border-radius: 50%;
   background-color: #ffffff1a;
+  fill: var(--btn-white-color);
 }
 
 .social-list {
@@ -521,9 +522,9 @@ justify-content: center;
   gap: 24px;
 }
 
-.social-list-icon {
+/* .social-list-icon {
   fill: var(--btn-white-color);
-}
+} */
 
 .social-list-link:hover,
 .social-list-link:focus {
