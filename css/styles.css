@@ -383,7 +383,6 @@ button {
 
 .footer-box {
   width: 264px;
-  text-align: left;
   margin-right: 120px;
 }
 
@@ -420,21 +419,19 @@ button {
   fill: var(--client-logo-color);
 }
 
-.customer-logo:hover,
-.customer-logo-icon:hover,
-.customer-logo:focus,
-.customer-logo-icon:focus {
-  border-color: var(--link-color);
-}
-
 .customer-logo-icon {
   fill: var(--client-logo-color);
 }
 
-/* .customer-logo-icon:hover,
-.customer-logo-icon:focus {
+.customer-logo:hover,
+.customer-logo:focus {
+  border-color: var(--link-color);
+}
+
+.customer-logo:hover .customer-logo-icon,
+.customer-logo:focus .customer-logo-icon {
   fill: var(--link-color);
-} */
+}
 
 .customer-logo-icon {
   display: flex;
