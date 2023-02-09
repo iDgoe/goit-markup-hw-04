@@ -27,6 +27,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--body-color);
+  background-color: var(--white-text-btn-color);
 }
 
 h1,
@@ -228,7 +229,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--white-text-btn-color);
   margin-bottom: 48px;
-  width: 495px;
+  width: 496px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -396,6 +397,7 @@ button {
 .customers-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .customer-item {
@@ -419,7 +421,9 @@ button {
 }
 
 .customer-logo:hover,
-.customer-logo:focus {
+.customer-logo-icon:hover,
+.customer-logo:focus,
+.customer-logo-icon:focus {
   border-color: var(--link-color);
 }
 
@@ -427,10 +431,10 @@ button {
   fill: var(--client-logo-color);
 }
 
-.customer-logo-icon:hover,
+/* .customer-logo-icon:hover,
 .customer-logo-icon:focus {
   fill: var(--link-color);
-}
+} */
 
 .customer-logo-icon {
   display: flex;
